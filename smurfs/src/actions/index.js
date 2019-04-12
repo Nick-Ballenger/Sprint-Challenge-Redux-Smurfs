@@ -44,3 +44,24 @@ export const getSmurfs = () => dispatch => {
     })
   })
 }
+
+export const addSmurf = smurf => dispatch => {
+  dispatch({
+    type: ADD_SMURF
+  })
+  axios
+  .post(`${url}smurfs`, smurf)
+  .then(response => {
+    dispatch({
+      type: SMURF_ADDED,
+      payload: response.data
+    })
+  })
+  .catch(err => {
+    dispatch({
+      type: ERROR,
+      payload: err
+    })
+  })
+}
+
