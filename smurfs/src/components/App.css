@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -25,4 +23,62 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+body{
+  background-image: url("http://underscoopfire.com/wp-content/uploads/2014/04/smurf-apocalypse_opt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.App{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+  
+}
+.Smurf{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:20px;
+  border:2px solid black;
+  background-image: linear-gradient(to right top, #e11e2f, #ac2f16, #7c3008, #522904, #2e1d06);
+  border-radius:8px;
+
+}
+p{
+  color:orange;
+}
+h1{
+  background-image: linear-gradient(to right top, #e11e2f, #ac2f16, #7c3008, #522904, #2e1d06);
+  border-radius:8px;
+  padding:10px;
+  color:orange;
+}
+input{
+  padding:15px;
+  margin:10px;
+  background-image: linear-gradient(to right top, #e11e2f, #ac2f16, #7c3008, #522904, #2e1d06);
+  color:orange;
+  border-radius:8px;
+}
+button{
+  color:orange;
+  background:black;
+  padding:10px;
+  border-radius:8px;
+  font-size:1.3rem;
+  margin:10px;
+
+}
+
+.SmurfFormWrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  justify-content:space-around;
+  height:80px;
+  
 }
